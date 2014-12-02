@@ -14,11 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>CsVTest.csv</name>
-			<type>1</type>
-			<location>/Users/mattlutrick/Documents/CsVTest.csv</location>
-		</link>
-	</linkedResources>
 </projectDescription>

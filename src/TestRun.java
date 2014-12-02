@@ -1,4 +1,4 @@
-import java.io.*;
+import java.io.File;
 
 
 
@@ -25,7 +25,16 @@ public class TestRun
 		}*/
 		String deQuoted = thisSplitter.removeQuotes(testString);
 		System.out.println(deQuoted);
-		String[] lineSplit = deQuoted.split("\n");
+		String[] lineSplit = null;
+		try
+		{
+			lineSplit = deQuoted.split("\n");
+		}
+		catch(Exception ex)
+		{
+			lineSplit = new String[1];
+			lineSplit[0] = deQuoted;
+		}
 		String[] holding = new String[Math.multiplyExact(lineSplit.length, 12)];
 		String[] holding2 = new String[Math.multiplyExact(lineSplit.length, 16)];
 		String[] finalHolding = new String[holding2.length];
